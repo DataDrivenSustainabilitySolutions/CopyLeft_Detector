@@ -1,0 +1,15 @@
+Package,License,Copyleft,Git_Hash,Email,Filename,Line_no
+ast,PSF License,False,N/A,N/A,.\check_licenses.py,1
+importlib,PSF License,False,N/A,N/A,.\check_licenses.py,10
+requests,AS License,False,N/A,N/A,.\check_licenses.py,7
+glob,PSF License,False,N/A,N/A,.\check_licenses.py,5
+os,PSF License,False,N/A,N/A,.\check_licenses.py,8
+stdlib_list,MIT License,False,N/A,N/A,.\check_licenses.py,12
+csv,PSF License,False,N/A,N/A,.\check_licenses.py,13
+subprocess,PSF License,False,N/A,N/A,.\check_licenses.py,2
+tabulate,MIT License,False,N/A,N/A,.\check_licenses.py,9
+importlib,PSF License,False,N/A,N/A,.\check_licenses.py,11
+re,PSF License,False,N/A,N/A,.\check_licenses.py,6
+sys,PSF License,False,N/A,N/A,.\check_licenses.py,3
+nbformat,BSD License,False,N/A,N/A,.\check_licenses.py,4
+matplotlib,PSF License,False,N/A,N/A,.\check_licenses.py,14
