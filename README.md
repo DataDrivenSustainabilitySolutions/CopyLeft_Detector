@@ -67,7 +67,13 @@ pip3 show <license-name> -v | grep -i license
 
 > Für manche Probleme wurde bereits ein [Issue](https://github.com/RaphaeleL/CopyLeft_Detector/issues) erstellt.
 
-- Das Skript extrahiert die Libraries aus dem Code Block eines Notebooks oder Python Files, es ist also nicht möglich zu sagen, welche Version einer Library überprüft wird. Schließlich kann jeder User eine andere Version von Python und Libraries installiert haben, und dennoch den Code verwenden.
+#### Issues 
+
+- Es können nur Verzeichne Überprüft werden, das ist bei GH Actions nicht umsetzbar. Dementsprechend sollten auch Links für Public Repos unterstützt werden ([#1](https://github.com/RaphaeleL/CopyLeft_Detector/issues/1))
+- Automatisierung, entweder GH Actions oder Precommit Hooks um das Skript automatisch nach jeder GH Interaktion zu starten.  ([#2](https://github.com/RaphaeleL/CopyLeft_Detector/issues/2))
+- Das Skript extrahiert die Libraries aus dem Code Block eines Notebooks oder Python Files, es ist also nicht möglich zu sagen, welche Version einer Library überprüft wird. Schließlich kann jeder User eine andere Version von Python und Libraries installiert haben, und dennoch den Code verwenden. ([#3](https://github.com/RaphaeleL/CopyLeft_Detector/issues/3))
+
+#### Probleme
 - [PyPi](https://pypi.org) ist ein *Python Package Index* Tool, welches nahezu alle Python Libaries findet, jedoch nicht alle.
 - Ebenfalls liefert [PyPi](https://pypi.org) manchmal eine andere Lizenz wie es obige Verifizierungs Komando macht. So hat [NumPy](https://pypi.org/project/numpy/) laut [PyPi](https://pypi.org/project/numpy/) eine [BSD](https://de.wikipedia.org/wiki/BSD-Lizenz)-Lizenz, laut dem obigen Komando aber eine [GPL](https://de.wikipedia.org/wiki/GNU_General_Public_License)-Lizenz. Problematisch weil die [GPL](https://de.wikipedia.org/wiki/GNU_General_Public_License)-Lizenz unter die [Copyleft](https://de.wikipedia.org/wiki/Copyleft) Klausel fällt (unerwünscht). 
 - Das Verifizierungs Komando ist keine Alternative zu der [PyPi](https://pypi.org) Problematik, weil damit keine [Github Actions](https://github.com/features/actions) mehr möglich sind.
