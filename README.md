@@ -53,6 +53,8 @@ jobs:
 
 Durch die Verwendung dieses GitHub Actions-Workflows wird das Skript automatisch bei Push-Vorgängen auf den Hauptzweig (main) Repositories ausgeführt.
 
+> Alternativ kann auch eine [Precommit Hook](https://pre-commit.com/) verwendet werden.
+
 ### Verifizieren
 
 Um das Skript zu verifizieren, kann folgendes Kommando gestartet werden, es extrahiert die Lizenz für ein installiertes Packages auf dem lokalen Computer.
@@ -67,3 +69,7 @@ pip3 show <license-name> -v | grep -i license
 - [PyPi](https://pypi.org) ist ein *Python Package Index* Tool, welches nahezu alle Python Libaries findet, jedoch nicht alle.
 - Ebenfalls liefert [PyPi](https://pypi.org) manchmal eine andere Lizenz wie es obige Verifizierungs Komando macht. So hat [NumPy](https://pypi.org/project/numpy/) laut [PyPi](https://pypi.org/project/numpy/) eine [BSD](https://de.wikipedia.org/wiki/BSD-Lizenz)-Lizenz, laut dem obigen Komando aber eine [GPL](https://de.wikipedia.org/wiki/GNU_General_Public_License)-Lizenz. Problematisch weil die [GPL](https://de.wikipedia.org/wiki/GNU_General_Public_License)-Lizenz unter die [Copyleft](https://de.wikipedia.org/wiki/Copyleft) Klausel fällt (unerwünscht). 
 - Das Verifizierungs Komando ist keine Alternative zu der [PyPi](https://pypi.org) Problematik, weil damit keine [Github Actions](https://github.com/features/actions) mehr möglich sind.
+
+### Kontakt
+
+- Author: Raphaele Salvatore Licciardo 
